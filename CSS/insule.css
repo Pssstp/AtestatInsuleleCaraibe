@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Set a light background color */
+}
+
+
+.content {
+    position: relative; /* Add position relative for absolute positioning */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(104, 104, 104, 0.5)),
+        url("../Poze/Homepage.jpg!d");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin-left: 12vw;
+    height: 100vh;
+    width: 88vw;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.prezentare {
+    position: relative; /* Add position relative for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 50vw; /* Set width to create a square */
+    height: 50vw; /* Set height to match width */
+}
+
+.prezentare:hover {
+    transform: translateY(-5px);
+}
+
+.prezentare img {
+    max-width: 100%; /* Ensure the image fills the entire width of the container */
+    max-height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.prezentare span {
+    position: absolute; /* Position the span absolutely */
+    top: 50%; /* Place the span at the middle vertically */
+    left: 50%; /* Center the span horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to center */
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    border-bottom-left-radius: 10px; /* Round the bottom-left corner */
+    border-bottom-right-radius: 10px; /* Round the bottom-right corner */
+}
